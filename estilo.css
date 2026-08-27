@@ -42,7 +42,7 @@ input { background-color: lightblue; }
     width: min(700px, 96vw);
     aspect-ratio: 2 / 3;
     padding: 17% 15% 16%;
-    background: url('pergamino-medieval.png') center / 100% 100% no-repeat;
+    background: url('pergamino-antiguo.png') center / 100% 100% no-repeat;
     color: #24150e;
     font-family: 'UnifrakturMaguntia', Georgia, serif;
     font-size: 34px;
