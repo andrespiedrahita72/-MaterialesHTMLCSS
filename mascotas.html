@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario sobre mascotas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        form {
+            max-width: 650px;
+        }
+
+        fieldset {
+            border: 2px solid #555;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            padding: 15px 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            padding: 0 8px;
+        }
+
+        input[type="text"],
+        textarea {
+            border: 1px solid #555;
+            border-radius: 4px;
+            padding: 7px;
+        }
+
+        textarea {
+            display: block;
+            margin-top: 8px;
+            max-width: 100%;
+        }
+
+        button {
+            border: 1px solid #444;
+            border-radius: 4px;
+            padding: 7px 14px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulario sobre mascotas</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Datos personales</legend>
+
+            <p>
+                <label for="nombre">Tu nombre:</label>
+                <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="50"
+                    placeholder="Escribe tu nombre" autocomplete="name">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información sobre mascota</legend>
+
+            <p>¿Tienes mascota?</p>
+
+            <p>
+                <input type="radio" id="mascota-si" name="mascota" value="si" required>
+                <label for="mascota-si">Sí</label>
+            </p>
+
+            <p>
+                <input type="radio" id="mascota-no" name="mascota" value="no">
+                <label for="mascota-no">No</label>
+            </p>
+
+            <p>
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" rows="5" cols="40" maxlength="300"
+                    placeholder="Escribe un comentario sobre tu mascota"></textarea>
+            </p>
+        </fieldset>
+
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </p>
+
+    </form>
+</body>
+
+</html>

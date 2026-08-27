@@ -1,0 +1,30 @@
+/* Selector universal: cambia la fuente de todos los elementos. */
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Selectores de etiqueta. */
+label {
+    color: darkblue;
+}
+
+input {
+    background-color: lightblue;
+}
+
+
+
+/* Selector de clase */
+.primero {
+    color: red;
+}
+
+/* Selector de Id */
+#contacto {
+    border: 2px solid darkblue;
+}
+
+/* Selector descendente: solo los label del segundo fieldset. */
+#contacto p label {
+    font-weight: bold;
+}
