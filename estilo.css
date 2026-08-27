@@ -28,3 +28,55 @@ input {
 #contacto p label {
     font-weight: bold;
 }
+
+/* Apariencia de pergamino antiguo. */
+.pergamino {
+    position: relative;
+    background-color: #e8c982;
+    background-image: radial-gradient(circle, #f7e7b5 20%, #d6aa5c 100%);
+    border-left: 12px solid #8b5a2b;
+    border-right: 12px solid #8b5a2b;
+    border-radius: 18px 5px 18px 5px;
+    box-shadow: 8px 10px 15px #6b4a2b;
+    color: #4b2e18;
+    margin: 55px 40px;
+    padding: 45px 55px;
+    max-width: 650px;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 20px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* Primera letra del texto. */
+.pergamino p::first-letter {
+    font-size: 65px;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+    line-height: 0.8;
+    margin: 8px 8px 0 0;
+}
+
+/* Extremos enrollados del pergamino. */
+.pergamino::before,
+.pergamino::after {
+    content: '';
+    position: absolute;
+    left: -25px;
+    width: calc(100% + 50px);
+    height: 28px;
+    background-color: #c79545;
+    background-image: linear-gradient(#e7c675, #9b682d, #d6aa5c);
+    border: 2px solid #7a4b20;
+    border-radius: 15px;
+    box-shadow: 3px 4px 6px #6b4a2b;
+}
+
+.pergamino::before {
+    top: -18px;
+}
+
+.pergamino::after {
+    bottom: -18px;
+}
