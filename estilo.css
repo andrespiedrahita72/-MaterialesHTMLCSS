@@ -1,8 +1,10 @@
 /* Selector universal: cambia la fuente de todos los elementos. */
 @font-face {
-    font-family: 'UnifrakturCook';
-    src: url('UnifrakturCook.ttf') format('truetype');
+    font-family: 'UnifrakturMaguntia';
+    src: url('UnifrakturMaguntia.ttf') format('truetype');
     font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 * {
@@ -42,8 +44,8 @@ input { background-color: lightblue; }
     padding: 17% 15% 16%;
     background: url('pergamino-medieval.png') center / 100% 100% no-repeat;
     color: #24150e;
-    font-family: 'UnifrakturCook', Georgia, serif;
-    font-size: 30px;
+    font-family: 'UnifrakturMaguntia', Georgia, serif;
+    font-size: 34px;
     line-height: 1.28;
     text-align: justify;
 }
@@ -53,15 +55,17 @@ input { background-color: lightblue; }
     z-index: 2;
     margin: 0 0 30px;
     color: #20120c;
-    font-family: 'UnifrakturCook', Georgia, serif;
-    font-size: 54px;
+    font-family: 'UnifrakturMaguntia', Georgia, serif;
+    font-size: 58px;
+    font-weight: normal;
     text-align: center;
 }
 
 .pergamino p {
     position: relative;
     z-index: 2;
-    font-family: 'UnifrakturCook', Georgia, serif;
+    font-family: 'UnifrakturMaguntia', Georgia, serif !important;
+    font-weight: normal;
 }
 
 /* Primera letra grande como en los textos antiguos. */
@@ -69,9 +73,9 @@ input { background-color: lightblue; }
     float: left;
     margin: 10px 10px 0 0;
     color: #7b2119;
-    font-family: 'UnifrakturCook', Georgia, serif;
+    font-family: 'UnifrakturMaguntia', Georgia, serif;
     font-size: 96px;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 0.75;
     text-transform: uppercase;
 }
