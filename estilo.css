@@ -30,22 +30,47 @@ input {
 }
 
 /* Apariencia de pergamino antiguo. */
+.pagina-pergamino {
+    min-height: 100vh;
+    margin: 0;
+    padding: 35px 45px;
+    box-sizing: border-box;
+    background-color: #3b2415;
+    background-image: linear-gradient(90deg, #28170d, #51301a, #28170d);
+}
+
 .pergamino {
     position: relative;
-    background-color: #e8c982;
-    background-image: radial-gradient(circle, #f7e7b5 20%, #d6aa5c 100%);
-    border-left: 12px solid #8b5a2b;
-    border-right: 12px solid #8b5a2b;
-    border-radius: 18px 5px 18px 5px;
-    box-shadow: 8px 10px 15px #6b4a2b;
-    color: #4b2e18;
-    margin: 55px 40px;
-    padding: 45px 55px;
-    max-width: 650px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    background-color: #dfbd72;
+    background-image:
+        radial-gradient(circle at 15% 20%, rgba(107, 62, 25, 0.28), transparent 10%),
+        radial-gradient(circle at 82% 75%, rgba(92, 49, 17, 0.25), transparent 13%),
+        radial-gradient(circle at 70% 18%, rgba(255, 244, 190, 0.45), transparent 18%),
+        repeating-linear-gradient(7deg, rgba(93, 57, 24, 0.07) 0 2px, transparent 2px 8px),
+        linear-gradient(90deg, #a96f32, #efd796 8%, #e6c47d 50%, #efd796 92%, #9b612c);
+    border: 6px double #6f421f;
+    border-radius: 20px 7px 18px 6px;
+    box-shadow:
+        0 12px 25px #160c07,
+        inset 0 0 35px #7c4b22,
+        inset 0 0 8px #3f210e;
+    color: #442713;
+    padding: 65px 8%;
     font-family: Georgia, 'Times New Roman', serif;
-    font-size: 20px;
-    line-height: 1.7;
+    font-size: 22px;
+    line-height: 1.8;
     text-align: justify;
+}
+
+.pergamino h1 {
+    color: #522d14;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 42px;
+    text-align: center;
+    text-shadow: 1px 2px 1px #d2a85d;
 }
 
 /* Primera letra del texto. */
@@ -63,20 +88,20 @@ input {
 .pergamino::after {
     content: '';
     position: absolute;
-    left: -25px;
-    width: calc(100% + 50px);
-    height: 28px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: 34px;
     background-color: #c79545;
-    background-image: linear-gradient(#e7c675, #9b682d, #d6aa5c);
-    border: 2px solid #7a4b20;
-    border-radius: 15px;
-    box-shadow: 3px 4px 6px #6b4a2b;
+    background-image: linear-gradient(#e3c173, #8f5727 55%, #d4a457);
+    border: 3px solid #603718;
+    border-radius: 18px;
+    box-shadow: 0 5px 8px #29160b;
 }
 
 .pergamino::before {
-    top: -18px;
+    top: -22px;
 }
 
 .pergamino::after {
-    bottom: -18px;
+    bottom: -22px;
 }
