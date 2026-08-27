@@ -1,4 +1,10 @@
 /* Selector universal: cambia la fuente de todos los elementos. */
+@font-face {
+    font-family: 'UnifrakturCook';
+    src: url('UnifrakturCook.ttf') format('truetype');
+    font-weight: normal;
+}
+
 * {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -22,109 +28,64 @@ input { background-color: lightblue; }
     margin: 0;
     padding: 22px;
     box-sizing: border-box;
-    background-color: #e8e2d4;
+    background-color: #2d2017;
     display: flex;
     justify-content: center;
 }
 
-/* Hoja antigua con bordes fragmentados. */
+/* Pergamino realista generado a partir de la imagen de referencia. */
 .pergamino {
     position: relative;
     box-sizing: border-box;
-    width: min(760px, 94vw);
-    min-height: calc(100vh - 44px);
-    padding: 105px 75px 70px;
-    background-color: #c9aa70;
-    background-image:
-        radial-gradient(ellipse at 17% 25%, rgba(88, 54, 25, 0.24), transparent 13%),
-        radial-gradient(ellipse at 79% 66%, rgba(82, 48, 20, 0.22), transparent 16%),
-        radial-gradient(ellipse at 63% 18%, rgba(238, 218, 164, 0.38), transparent 20%),
-        repeating-linear-gradient(2deg, rgba(76, 47, 24, 0.07) 0 1px, transparent 1px 6px),
-        linear-gradient(90deg, #81562e, #c09b5f 5%, #d0b57d 18%, #c6a86e 82%, #9a6b39 96%, #704622);
-    color: rgba(54, 34, 20, 0.86);
-    box-shadow: 0 12px 22px rgba(48, 30, 17, 0.45), inset 0 0 55px rgba(72, 41, 18, 0.52);
-    clip-path: polygon(
-        3% 4%, 9% 3%, 15% 4%, 22% 3%, 30% 4%, 38% 3%, 47% 4%,
-        56% 3%, 65% 4%, 74% 3%, 83% 4%, 91% 3%, 97% 5%,
-        96% 11%, 98% 18%, 96% 25%, 97% 33%, 95% 41%, 98% 49%,
-        96% 57%, 97% 65%, 95% 73%, 97% 81%, 95% 89%, 97% 96%,
-        90% 97%, 83% 96%, 75% 98%, 67% 96%, 58% 98%, 50% 96%,
-        42% 98%, 34% 96%, 26% 98%, 18% 96%, 10% 98%, 3% 95%,
-        5% 87%, 2% 79%, 4% 71%, 2% 63%, 5% 55%, 2% 47%,
-        4% 39%, 2% 31%, 5% 23%, 2% 15%
-    );
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 21px;
-    line-height: 1.8;
+    width: min(700px, 96vw);
+    aspect-ratio: 2 / 3;
+    padding: 17% 15% 16%;
+    background: url('pergamino-medieval.png') center / 100% 100% no-repeat;
+    color: #24150e;
+    font-family: 'UnifrakturCook', Georgia, serif;
+    font-size: 30px;
+    line-height: 1.28;
     text-align: justify;
 }
 
 .pergamino h1 {
     position: relative;
     z-index: 2;
-    margin-top: 25px;
-    color: rgba(62, 37, 20, 0.82);
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 39px;
+    margin: 0 0 30px;
+    color: #20120c;
+    font-family: 'UnifrakturCook', Georgia, serif;
+    font-size: 54px;
     text-align: center;
 }
 
 .pergamino p {
     position: relative;
     z-index: 2;
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'UnifrakturCook', Georgia, serif;
 }
 
 /* Primera letra grande como en los textos antiguos. */
 .pergamino p::first-letter {
     float: left;
-    margin: 9px 9px 0 0;
-    color: #533018;
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 68px;
+    margin: 10px 10px 0 0;
+    color: #7b2119;
+    font-family: 'UnifrakturCook', Georgia, serif;
+    font-size: 96px;
     font-weight: bold;
     line-height: 0.75;
     text-transform: uppercase;
 }
 
-/* Rollo superior del pergamino. */
-.pergamino::before {
-    content: '';
-    position: absolute;
-    z-index: 3;
-    top: 18px;
-    left: 1%;
-    width: 98%;
-    height: 55px;
-    border: 2px solid #60401f;
-    border-radius: 48% 48% 35% 35%;
-    background-image:
-        repeating-linear-gradient(3deg, rgba(68, 40, 18, 0.14) 0 2px, transparent 2px 7px),
-        linear-gradient(#9c7443, #5f3e20 18%, #b18b54 55%, #76502b 88%);
-    box-shadow: 0 7px 9px rgba(48, 28, 14, 0.55);
-}
-
-/* Desteñidos, humedad y pequeñas marcas de vejez. */
+/* La textura ya contiene el desgaste realista. */
 .desgaste {
-    position: absolute;
-    z-index: 1;
-    inset: 60px 28px 25px;
-    pointer-events: none;
-    background-image:
-        radial-gradient(ellipse at 9% 15%, rgba(77, 43, 19, 0.42) 0 2%, transparent 11%),
-        radial-gradient(ellipse at 88% 22%, rgba(218, 196, 143, 0.38) 0 5%, transparent 16%),
-        radial-gradient(ellipse at 25% 77%, rgba(80, 45, 19, 0.31) 0 2%, transparent 12%),
-        radial-gradient(ellipse at 70% 83%, rgba(67, 38, 17, 0.27) 0 3%, transparent 14%),
-        radial-gradient(circle at 52% 48%, rgba(225, 204, 150, 0.30) 0 7%, transparent 19%);
-    filter: blur(2px);
-    opacity: 0.8;
+    display: none;
 }
 
 @media (max-width: 600px) {
     .pergamino {
-        padding: 95px 42px 55px;
-        font-size: 18px;
+        padding: 18% 15% 16%;
+        font-size: 22px;
     }
 
-    .pergamino h1 { font-size: 31px; }
+    .pergamino h1 { font-size: 40px; }
 }
