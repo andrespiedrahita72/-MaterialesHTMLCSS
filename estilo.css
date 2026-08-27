@@ -179,6 +179,28 @@ input { background-color: lightblue; }
     text-align: center;
 }
 
+.presentacion-protex {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 65px 8% 25px;
+    text-align: center;
+}
+
+.presentacion-protex .etiqueta-protex {
+    color: #2449bd;
+}
+
+.presentacion-protex h2 {
+    margin: 10px 0 20px;
+    font-size: 36px;
+}
+
+.presentacion-protex p:not(.etiqueta-protex) {
+    color: #59677f;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
 .servicios-protex h2 {
     margin-bottom: 8px;
     font-size: 36px;
