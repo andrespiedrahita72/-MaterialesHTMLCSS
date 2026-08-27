@@ -28,3 +28,23 @@ input {
 #contacto p label {
     font-weight: bold;
 }
+
+/* Apariencia de papel papiro. */
+.papiro {
+    background-color: #e7cf9a;
+    border: 4px solid #8b5a2b;
+    color: #4b2e18;
+    margin: 20px;
+    padding: 25px;
+    max-width: 600px;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* Primera letra del texto. */
+.papiro p::first-letter {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+    margin-right: 6px;
+}
