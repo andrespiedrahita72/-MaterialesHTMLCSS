@@ -93,3 +93,172 @@ input { background-color: lightblue; }
 
     .pergamino h1 { font-size: 40px; }
 }
+
+/* Reto 2: interfaz del proyecto PROTEX IQ. */
+.reto2-page {
+    margin: 0;
+    background-color: #f5f7fb;
+    color: #26334a;
+    font-family: Arial, sans-serif;
+}
+
+.barra-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: white;
+    border-bottom: 1px solid #dbe2ee;
+}
+
+.marca {
+    color: #2449bd;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.barra-navegacion nav a {
+    color: #26334a;
+    margin-left: 28px;
+    text-decoration: none;
+}
+
+.barra-navegacion nav a:hover {
+    color: #2449bd;
+}
+
+.hero-protex {
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+    padding: 40px 8%;
+    background-image:
+        linear-gradient(90deg, rgba(12, 34, 83, 0.92), rgba(36, 73, 189, 0.55)),
+        url('protex-panel.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-contenido {
+    max-width: 650px;
+    color: white;
+}
+
+.etiqueta-protex {
+    color: #8fc4ff;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-contenido h1 {
+    margin: 15px 0;
+    font-size: 48px;
+    line-height: 1.15;
+}
+
+.hero-contenido p {
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.boton-protex {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 22px;
+    border-radius: 5px;
+    background-color: white;
+    color: #2449bd;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.servicios-protex {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.servicios-protex h2 {
+    margin-bottom: 8px;
+    font-size: 36px;
+}
+
+.introduccion-servicios {
+    margin-bottom: 35px;
+    color: #6c7890;
+}
+
+.tarjetas-protex {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.tarjeta-protex {
+    width: 31%;
+    overflow: hidden;
+    background-color: white;
+    border: 1px solid #dbe2ee;
+    border-radius: 7px;
+    box-shadow: 0 5px 14px rgba(38, 51, 74, 0.10);
+    text-align: left;
+}
+
+.tarjeta-protex img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-bottom: 1px solid #dbe2ee;
+}
+
+.contenido-tarjeta {
+    padding: 22px;
+}
+
+.contenido-tarjeta h3 {
+    margin-top: 0;
+    font-size: 22px;
+}
+
+.contenido-tarjeta p {
+    min-height: 68px;
+    color: #6c7890;
+    line-height: 1.5;
+}
+
+.contenido-tarjeta a {
+    color: #2449bd;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.reto2-page footer {
+    padding: 25px;
+    background-color: #172544;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .barra-navegacion,
+    .tarjetas-protex {
+        flex-direction: column;
+    }
+
+    .barra-navegacion nav {
+        margin-top: 15px;
+    }
+
+    .barra-navegacion nav a {
+        margin: 0 14px 0 0;
+    }
+
+    .hero-contenido h1 {
+        font-size: 36px;
+    }
+
+    .tarjeta-protex {
+        width: 100%;
+    }
+}
